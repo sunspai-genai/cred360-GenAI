@@ -1,0 +1,15 @@
+{
+    "chart_type": "bar",
+    "c_name": "CAGR Comparison (Based on Net Sales)",
+    "cagr_metric": "Net Sales",
+    "categories": [
+        "Past 3Y Actual",
+        "Next 3Y Expected"
+    ],
+    "data_series": {
+        "CAGR %": [
+            -5.059027691366802,
+            3.08446935614084
+        ]
+    }
+}

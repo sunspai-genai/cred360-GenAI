@@ -1,0 +1,3 @@
+```json
+{'Date': ['31-03-2022', '31-03-2023'], 'Current Assets': [257.79, 380.31], 'Current Liabilities': [194.33, 194.97], 'Inventory': [113.39, 128.04], 'Total Debt': [1078.85, 945.2], 'Total Equity': [380.59, 466.53], 'EBIT (Earnings Before Interest and Taxes)': [0, 0], 'Interest Expense': [0, 0], 'Net Income': [0, 0], 'Total Assets': [1459.44, 1411.73], 'Revenue': [0, 0], 'Fixed Assets': [1166.32, 1004.09], 'COGS (Cost of Goods Sold)': [0, 0], 'Shareholders Equity': [380.59, 466.53], 'Cash': [1.55, 3.9], 'Cash Equivalents': [0, 0], 'Retained Earnings': [25.59, 85.94]}
+```

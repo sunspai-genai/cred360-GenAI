@@ -1,0 +1,194 @@
+{
+	"info": {
+		"_postman_id": "8c35e041-3bed-4742-ac2e-ea11caf5be3c",
+		"name": "Cred360",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "18254903"
+	},
+	"item": [
+		{
+			"name": "AnalyzeCMAData",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "account_name",
+							"value": "ltimindtree",
+							"type": "text"
+						},
+						{
+							"key": "file",
+							"type": "file",
+							"src": "/C:/Users/10829459/OneDrive - LTIMindtree/LTIM/cred360/src/data/input_data_sources/tesla/1. CMA_Data.xlsx"
+						}
+					]
+				},
+				"url": {
+					"raw": "{{base_url}}:{{port}}/cma_data",
+					"host": [
+						"{{base_url}}"
+					],
+					"port": "{{port}}",
+					"path": [
+						"cma_data"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "AnalyzeCMAData",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "account_name",
+									"value": "ltimindtree",
+									"type": "text"
+								},
+								{
+									"key": "file",
+									"type": "file",
+									"src": "/C:/Users/10829459/OneDrive - LTIMindtree/LTIM/cred360/src/data/input_data_sources/tesla/1. CMA_Data.xlsx"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{base_url}}:{{port}}/analyze",
+							"host": [
+								"{{base_url}}"
+							],
+							"port": "{{port}}",
+							"path": [
+								"analyze"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "date",
+							"value": "Wed, 02 Apr 2025 07:06:17 GMT"
+						},
+						{
+							"key": "server",
+							"value": "uvicorn"
+						},
+						{
+							"key": "content-length",
+							"value": "81"
+						},
+						{
+							"key": "content-type",
+							"value": "application/json"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"status\": \"success\",\n    \"message\": \"Analysis successfully completed for ltimindtree.\"\n}"
+				}
+			]
+		},
+		{
+			"name": "GetReportsByAccountName",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{base_url}}:{{port}}/reports/ltimindtree",
+					"host": [
+						"{{base_url}}"
+					],
+					"port": "{{port}}",
+					"path": [
+						"reports",
+						"ltimindtree"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "ReportsByAccountName",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{base_url}}:{{port}}/reports/LTIMIndtree",
+							"host": [
+								"{{base_url}}"
+							],
+							"port": "{{port}}",
+							"path": [
+								"reports",
+								"LTIMIndtree"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "date",
+							"value": "Wed, 02 Apr 2025 07:48:41 GMT"
+						},
+						{
+							"key": "server",
+							"value": "uvicorn"
+						},
+						{
+							"key": "content-length",
+							"value": "27616"
+						},
+						{
+							"key": "content-type",
+							"value": "application/json"
+						}
+					],
+					"cookie": [],
+					"body": "[\n    {\n        \"report_name\": \"Cumulative Report\",\n        \"content\": \"<h1>Cumulative Financial Analysis Report for ltimindtree</h1>\\n\\n<h2>Introduction</h2>\\n\\n<p>The purpose of this report is to provide a comprehensive summary of the financial analysis for ltimindtree, based on the individual reports for the Profit &amp; Loss Statement, Balance Sheet, and Fund Flow Statement. The sections analyzed include:</p>\\n\\n<ul>\\n<li>Profit &amp; Loss Statement</li>\\n<li>Balance Sheet</li>\\n<li>Fund Flow Statement</li>\\n</ul>\\n\\n<h2>Profit &amp; Loss Statement</h2>\\n\\n<h3>Key Metrics Analysis</h3>\\n\\n<ol>\\n<li><p><strong>Revenue/Sales:</strong></p>\\n\\n<ul>\\n<li>Total revenue has shown a consistent upward trend from 2022 to 2029, increasing from 689.3 to 1710.82. This growth is attributed to increased gross sales locally, with no export sales.</li>\\n</ul></li>\\n<li><p><strong>Cost of Goods Sold (COGS):</strong></p>\\n\\n<ul>\\n<li>Direct production costs have risen from 496.16 in 2022 to 1023.02 in 2029, indicating that while revenue is increasing, production costs are also rising.</li>\\n</ul></li>\\n<li><p><strong>Gross Profit Margin:</strong></p>\\n\\n<ul>\\n<li>Improved from 28.02% in 2022 to 40.20% in 2029, indicating efficient management of production costs relative to sales.</li>\\n</ul></li>\\n<li><p><strong>Operating Expenses:</strong></p>\\n\\n<ul>\\n<li>Operating expenses, including SG&amp;A, have increased from 11.3 in 2022 to 25.53 in 2029, but remain relatively small compared to revenue growth.</li>\\n</ul></li>\\n<li><p><strong>Operating Income (EBIT):</strong></p>\\n\\n<ul>\\n<li>EBIT has increased from 181.84 in 2022 to 662.27 in 2029, indicating improved operational efficiency.</li>\\n</ul></li>\\n<li><p><strong>Operating Profit Margin:</strong></p>\\n\\n<ul>\\n<li>Improved from 26.38% in 2022 to 38.71% in 2029, indicating higher profitability from operations.</li>\\n</ul></li>\\n<li><p><strong>Net Income:</strong></p>\\n\\n<ul>\\n<li>Net income has increased significantly from 90.39 in 2022 to 512.39 in 2029, reflecting strong financial health and profitability.</li>\\n</ul></li>\\n<li><p><strong>Net Profit Margin:</strong></p>\\n\\n<ul>\\n<li>Improved from 13.11% in 2022 to 29.95% in 2029, indicating better retention of revenue as profit.</li>\\n</ul></li>\\n<li><p><strong>Earnings Per Share (EPS):</strong></p>\\n\\n<ul>\\n<li>EPS has increased from 11.30 in 2022 to 64.05 in 2029, indicating growing profitability per share.</li>\\n</ul></li>\\n<li><p><strong>EBITDA:</strong></p>\\n\\n<ul>\\n<li>EBITDA has increased from 269.02 in 2022 to 728.32 in 2029, indicating strong operational performance and cash flow generation.</li>\\n</ul></li>\\n<li><p><strong>Depreciation and Amortization:</strong></p>\\n\\n<ul>\\n<li>Expenses have decreased from 87.18 in 2022 to 66.05 in 2029, positively impacting net income.</li>\\n</ul></li>\\n<li><p><strong>Interest Expense:</strong></p>\\n\\n<ul>\\n<li>Interest expenses have decreased significantly from 85.63 in 2022 to 16.73 in 2029, indicating reduced debt levels and associated costs.</li>\\n</ul></li>\\n<li><p><strong>Tax Expense:</strong></p>\\n\\n<ul>\\n<li>Tax expenses have increased from 5.82 in 2022 to 133.15 in 2029, in line with rising profitability.</li>\\n</ul></li>\\n<li><p><strong>EBIT to EBITDA Conversion:</strong></p>\\n\\n<ul>\\n<li>Consistent increase, indicating effective management of non-cash expenses.</li>\\n</ul></li>\\n</ol>\\n\\n<h3>Conclusion</h3>\\n\\n<p>The company has shown strong financial performance with consistent revenue growth, improved profit margins, and effective management of operating expenses. The reduction in interest expenses and effective tax management further enhance profitability. Positive trends in key metrics such as EBIT, EBITDA, and EPS indicate a healthy and growing financial position, making the company attractive to investors.</p>\\n\\n<h2>Balance Sheet</h2>\\n\\n<h3>Key Metrics Analysis</h3>\\n\\n<ol>\\n<li><p><strong>Liquidity Ratios:</strong></p>\\n\\n<ul>\\n<li><strong>Current Ratio:</strong> Improved from 1.33 in 2022 to 23.22 in 2029, indicating strong short-term financial health.</li>\\n<li><strong>Quick Ratio:</strong> Improved from 0.74 in 2022 to 20.84 in 2029, indicating strong liquidity without relying on inventory sales.</li>\\n<li><strong>Working Capital:</strong> Increased from 63.46 in 2022 to 1379.79 in 2029, suggesting enhanced operational liquidity.</li>\\n</ul></li>\\n<li><p><strong>Solvency Ratios:</strong></p>\\n\\n<ul>\\n<li><strong>Debt-to-Equity Ratio:</strong> Decreased from 2.32 in 2022 to 0.05 in 2029, indicating reduced reliance on debt and improved long-term financial stability.</li>\\n<li><strong>Interest Coverage Ratio:</strong> No interest expenses recorded, indicating strong solvency.</li>\\n</ul></li>\\n<li><p><strong>Asset Management &amp; Efficiency Ratios:</strong></p>\\n\\n<ul>\\n<li><strong>Return on Assets (ROA):</strong> Zero values, indicating no profit generation from assets.</li>\\n<li><strong>Fixed Asset Turnover:</strong> Zero values, indicating no revenue generation from fixed assets.</li>\\n</ul></li>\\n<li><p><strong>Profitability Indicators:</strong></p>\\n\\n<ul>\\n<li><strong>Return on Equity (ROE):</strong> Zero values, indicating no profit generation from equity.</li>\\n<li><strong>Gross Profit Margin:</strong> No values recorded, indicating no gross profit.</li>\\n</ul></li>\\n<li><p><strong>Capital Structure &amp; Leverage Analysis:</strong></p>\\n\\n<ul>\\n<li><strong>Equity Ratio:</strong> Increased from 0.26 in 2022 to 0.92 in 2029, indicating growing reliance on equity financing.</li>\\n<li><strong>Debt Ratio:</strong> Decreased from 0.61 in 2022 to 0.05 in 2029, indicating reduced debt financing.</li>\\n</ul></li>\\n<li><p><strong>Cash &amp; Reserves Analysis:</strong></p>\\n\\n<ul>\\n<li><strong>Cash and Cash Equivalents:</strong> Increased from 1.55 in 2022 to 28.90 in 2029, indicating growing liquidity reserves.</li>\\n<li><strong>Retained Earnings:</strong> Increased from 25.59 in 2022 to 291.98 in 2029, indicating consistent reinvestment of profits for growth.</li>\\n</ul></li>\\n</ol>\\n\\n<h3>Conclusion</h3>\\n\\n<p>The balance sheet metrics indicate improving liquidity, reduced reliance on debt, and growing equity financing. However, the absence of profitability indicators suggests the company is not generating profit from its assets and equity. The increasing cash reserves and retained earnings highlight strong liquidity and reinvestment strategies.</p>\\n\\n<h2>Fund Flow Statement</h2>\\n\\n<h3>Key Metrics Analysis</h3>\\n\\n<ol>\\n<li><p><strong>Sources of Funds:</strong></p>\\n\\n<ul>\\n<li>Net profit (after tax) varies, indicating earnings available for reinvestment.</li>\\n<li>Depreciation &amp; amortization vary, added back as a source of funds.</li>\\n<li>No significant asset sales, equity capital raised, or new debt raised.</li>\\n</ul></li>\\n<li><p><strong>Application of Funds:</strong></p>\\n\\n<ul>\\n<li>No significant investment in new assets.</li>\\n<li>Debt reduction varies, improving solvency.</li>\\n<li>No dividend payments, investment purchases, or miscellaneous fund applications.</li>\\n</ul></li>\\n<li><p><strong>Changes in Working Capital:</strong></p>\\n\\n<ul>\\n<li>Increase in current assets (inventory and accounts receivable) indicates uses of funds.</li>\\n<li>Increase in current liabilities (payables and short-term debt) indicates sources of funds.</li>\\n<li>Net change in working capital shows a deficit in most periods, impacting liquidity negatively.</li>\\n</ul></li>\\n<li><p><strong>Fund Flow from Different Activities:</strong></p>\\n\\n<ul>\\n<li>Operating activities show varying net inflow/outflow, indicating profitability and core business cash flow.</li>\\n<li>No significant asset purchases/sales or debt and equity transactions.</li>\\n</ul></li>\\n<li><p><strong>Liquidity &amp; Financial Stability Assessment:</strong></p>\\n\\n<ul>\\n<li>Challenges in maintaining positive net cash flow, indicating potential difficulties in meeting obligations.</li>\\n<li>Fund movement has not significantly impacted financial leverage.</li>\\n<li>Fund flows primarily support operational activities, with limited investment in new assets or strategic acquisitions.</li>\\n</ul></li>\\n</ol>\\n\\n<h3>Key Insights &amp; Recommendations</h3>\\n\\n<ul>\\n<li><strong>Positive Trends:</strong> Strong operating cash flow and free cash flow indicate good cash generation from core business activities.</li>\\n<li><strong>Risk Factors:</strong> Declining liquidity, negative net cash flow in several periods, and a deficit in working capital are concerning.</li>\\n<li><strong>Strategic Actions:</strong>\\n<ul>\\n<li>Improve cash management to ensure positive net cash flow.</li>\\n<li>Focus on reducing receivables and inventory to improve working capital.</li>\\n<li>Consider strategic investments to support long-term growth.</li>\\n<li>Explore opportunities for raising equity or debt to strengthen the financial position.</li>\\n</ul></li>\\n</ul>\\n\\n<h2>Overall Conclusion/Key Takeaways</h2>\\n\\n<p>The cumulative analysis of ltimindtree's financial statements reveals several key trends and insights:</p>\\n\\n<ul>\\n<li><strong>Revenue Growth:</strong> The company has shown consistent revenue growth, indicating strong market performance.</li>\\n<li><strong>Profitability:</strong> Improved profit margins and net income reflect effective cost management and operational efficiency.</li>\\n<li><strong>Liquidity:</strong> Increasing liquidity ratios and cash reserves indicate strong short-term financial health.</li>\\n<li><strong>Solvency:</strong> Reduced reliance on debt and improved equity financing suggest long-term financial stability.</li>\\n<li><strong>Challenges:</strong> The absence of profitability indicators from assets and equity, declining liquidity, and negative net cash flow in several periods highlight areas for improvement.</li>\\n</ul>\\n\\n<p>Overall, ltimindtree demonstrates strong financial performance and growth potential, but must address liquidity management and strategic investment to ensure sustained long-term success.</p>\\n\",\n        \"type\": \"cumulative\"\n    },\n    {\n        \"report_name\": \"Balance Sheet\",\n        \"content\": \"<h3>Balance Sheet Report</h3>\\n\\n<h4>Key Metrics Analysis</h4>\\n\\n<ol>\\n<li><p><strong>Liquidity Ratios (Short-term Financial Health)</strong></p>\\n\\n<ul>\\n<li><p><strong>Current Ratio</strong>: </p>\\n\\n<ul>\\n<li>2022: 1.33</li>\\n<li>2023: 1.95</li>\\n<li>2024: 2.60</li>\\n<li>2025: 3.35</li>\\n<li>2026: 4.19</li>\\n<li>2027: 5.12</li>\\n<li>2028: 6.52</li>\\n<li>2029: 23.22</li>\\n<li><strong>Interpretation</strong>: The current ratio indicates the company's ability to cover short-term obligations with its current assets. A ratio above 1 suggests good liquidity, and the increasing trend over the years shows improving short-term financial health.</li>\\n</ul></li>\\n<li><p><strong>Quick Ratio (Acid-Test Ratio)</strong>: </p>\\n\\n<ul>\\n<li>2022: 0.74</li>\\n<li>2023: 1.34</li>\\n<li>2024: 1.95</li>\\n<li>2025: 2.68</li>\\n<li>2026: 3.50</li>\\n<li>2027: 4.41</li>\\n<li>2028: 5.75</li>\\n<li>2029: 20.84</li>\\n<li><strong>Evaluation</strong>: The quick ratio excludes inventory from current assets, providing a stringent measure of liquidity. The values above 1 from 2023 onwards indicate strong liquidity without relying on inventory sales.</li>\\n</ul></li>\\n<li><p><strong>Working Capital</strong>: </p>\\n\\n<ul>\\n<li>2022: 63.46</li>\\n<li>2023: 185.34</li>\\n<li>2024: 313.10</li>\\n<li>2025: 459.21</li>\\n<li>2026: 624.08</li>\\n<li>2027: 807.69</li>\\n<li>2028: 1021.76</li>\\n<li>2029: 1379.79</li>\\n<li><strong>Assessment</strong>: Working capital represents operational liquidity. The increasing trend suggests the company is enhancing its ability to fund day-to-day operations.</li>\\n</ul></li>\\n</ul></li>\\n<li><p><strong>Solvency Ratios (Long-term Financial Stability)</strong></p>\\n\\n<ul>\\n<li><p><strong>Debt-to-Equity Ratio</strong>: </p>\\n\\n<ul>\\n<li>2022: 2.32</li>\\n<li>2023: 1.61</li>\\n<li>2024: 1.06</li>\\n<li>2025: 0.66</li>\\n<li>2026: 0.38</li>\\n<li>2027: 0.19</li>\\n<li>2028: 0.06</li>\\n<li>2029: 0.05</li>\\n<li><strong>Analysis</strong>: This ratio measures financial leverage. The decreasing trend indicates the company is reducing its reliance on debt, improving long-term financial stability.</li>\\n</ul></li>\\n<li><p><strong>Interest Coverage Ratio</strong>: </p>\\n\\n<ul>\\n<li>2022: NaN</li>\\n<li>2023: NaN</li>\\n<li>2024: NaN</li>\\n<li>2025: NaN</li>\\n<li>2026: NaN</li>\\n<li>2027: NaN</li>\\n<li>2028: NaN</li>\\n<li>2029: NaN</li>\\n<li><strong>Determination</strong>: The absence of interest expenses suggests the company has no debt requiring interest payments, indicating strong solvency.</li>\\n</ul></li>\\n</ul></li>\\n<li><p><strong>Asset Management &amp; Efficiency Ratios</strong></p>\\n\\n<ul>\\n<li><p><strong>Return on Assets (ROA)</strong>: </p>\\n\\n<ul>\\n<li>2022: 0.0</li>\\n<li>2023: 0.0</li>\\n<li>2024: 0.0</li>\\n<li>2025: 0.0</li>\\n<li>2026: 0.0</li>\\n<li>2027: 0.0</li>\\n<li>2028: 0.0</li>\\n<li>2029: 0.0</li>\\n<li><strong>Evaluation</strong>: ROA measures efficiency in using assets to generate profit. The values are zero, indicating no profit generation from assets.</li>\\n</ul></li>\\n<li><p><strong>Fixed Asset Turnover</strong>: </p>\\n\\n<ul>\\n<li>2022: 0.0</li>\\n<li>2023: 0.0</li>\\n<li>2024: 0.0</li>\\n<li>2025: 0.0</li>\\n<li>2026: 0.0</li>\\n<li>2027: 0.0</li>\\n<li>2028: 0.0</li>\\n<li>2029: 0.0</li>\\n<li><strong>Assessment</strong>: This ratio assesses effectiveness in utilizing fixed assets. The values are zero, indicating no revenue generation from fixed assets.</li>\\n</ul></li>\\n</ul></li>\\n<li><p><strong>Profitability Indicators</strong></p>\\n\\n<ul>\\n<li><p><strong>Return on Equity (ROE)</strong>: </p>\\n\\n<ul>\\n<li>2022: 0.0</li>\\n<li>2023: 0.0</li>\\n<li>2024: 0.0</li>\\n<li>2025: 0.0</li>\\n<li>2026: 0.0</li>\\n<li>2027: 0.0</li>\\n<li>2028: 0.0</li>\\n<li>2029: 0.0</li>\\n<li><strong>Analysis</strong>: ROE measures profitability from shareholder investment. The values are zero, indicating no profit generation from equity.</li>\\n</ul></li>\\n<li><p><strong>Gross Profit Margin</strong>: </p>\\n\\n<ul>\\n<li>2022: NaN</li>\\n<li>2023: NaN</li>\\n<li>2024: NaN</li>\\n<li>2025: NaN</li>\\n<li>2026: NaN</li>\\n<li>2027: NaN</li>\\n<li>2028: NaN</li>\\n<li>2029: NaN</li>\\n<li><strong>Measurement</strong>: This margin measures core business profitability. The absence of values suggests no gross profit.</li>\\n</ul></li>\\n</ul></li>\\n<li><p><strong>Capital Structure &amp; Leverage Analysis</strong></p>\\n\\n<ul>\\n<li><p><strong>Equity Ratio</strong>: </p>\\n\\n<ul>\\n<li>2022: 0.26</li>\\n<li>2023: 0.33</li>\\n<li>2024: 0.42</li>\\n<li>2025: 0.52</li>\\n<li>2026: 0.63</li>\\n<li>2027: 0.74</li>\\n<li>2028: 0.84</li>\\n<li>2029: 0.92</li>\\n<li><strong>Indication</strong>: This ratio indicates the proportion of assets financed by equity. The increasing trend suggests a growing reliance on equity financing.</li>\\n</ul></li>\\n<li><p><strong>Debt Ratio</strong>: </p>\\n\\n<ul>\\n<li>2022: 0.61</li>\\n<li>2023: 0.53</li>\\n<li>2024: 0.44</li>\\n<li>2025: 0.34</li>\\n<li>2026: 0.24</li>\\n<li>2027: 0.14</li>\\n<li>2028: 0.05</li>\\n<li>2029: 0.05</li>\\n<li><strong>Show</strong>: This ratio shows the percentage of assets financed by debt. The decreasing trend indicates reduced debt financing.</li>\\n</ul></li>\\n</ul></li>\\n<li><p><strong>Cash &amp; Reserves Analysis</strong></p>\\n\\n<ul>\\n<li><p><strong>Cash and Cash Equivalents</strong>: </p>\\n\\n<ul>\\n<li>2022: 1.55</li>\\n<li>2023: 3.90</li>\\n<li>2024: 7.58</li>\\n<li>2025: 11.20</li>\\n<li>2026: 13.94</li>\\n<li>2027: 15.39</li>\\n<li>2028: 21.10</li>\\n<li>2029: 28.90</li>\\n<li><strong>Assessment</strong>: The increasing values indicate growing liquidity reserves, enhancing the company's ability to meet short-term obligations.</li>\\n</ul></li>\\n<li><p><strong>Retained Earnings</strong>: </p>\\n\\n<ul>\\n<li>2022: 25.59</li>\\n<li>2023: 85.94</li>\\n<li>2024: 114.38</li>\\n<li>2025: 152.16</li>\\n<li>2026: 187.65</li>\\n<li>2027: 225.45</li>\\n<li>2028: 260.42</li>\\n<li>2029: 291.98</li>\\n<li><strong>Evaluation</strong>: Retained earnings represent profit reinvestment for growth. The increasing trend suggests the company is consistently reinvesting profits to fuel growth.</li>\\n</ul></li>\\n</ul></li>\\n</ol>\\n\\n<h3>Conclusion</h3>\\n\\n<p>The balance sheet metrics indicate improving liquidity, reduced reliance on debt, and growing equity financing. However, the absence of profitability indicators suggests the company is not generating profit from its assets and equity. The increasing cash reserves and retained earnings highlight strong liquidity and reinvestment strategies.</p>\\n\",\n        \"type\": \"individual\"\n    },\n    {\n        \"report_name\": \"Fund Flow\",\n        \"content\": \"<h3>Fund Flow Statement Analysis Report</h3>\\n\\n<h4>1. Introduction</h4>\\n\\n<ul>\\n<li><strong>Overview</strong>: The company's financial position over the period from 31-03-2023 to 31-03-2029 has been analyzed using the Fund Flow Statement.</li>\\n<li><strong>Purpose</strong>: The analysis aims to understand the movement of funds, their sources, and their impact on cash liquidity, profitability, and overall financial health.</li>\\n<li><strong>Key Observations</strong>: The company has experienced fluctuations in net cash flow, operating cash flow, and working capital over the analyzed periods.</li>\\n</ul>\\n\\n<h4>2. Sources of Funds</h4>\\n\\n<table>\\n<thead>\\n<tr>\\n  <th>Source</th>\\n  <th>Amount ($)</th>\\n  <th>Remarks</th>\\n</tr>\\n</thead>\\n<tbody>\\n<tr>\\n  <td>Net Profit (After Tax)</td>\\n  <td>Varies</td>\\n  <td>Indicates earnings available for reinvestment.</td>\\n</tr>\\n<tr>\\n  <td>Depreciation &amp; Amortization</td>\\n  <td>Varies</td>\\n  <td>Non-cash expense added back as a source of funds.</td>\\n</tr>\\n<tr>\\n  <td>Sale of Fixed Assets</td>\\n  <td>0</td>\\n  <td>No significant asset sales recorded.</td>\\n</tr>\\n<tr>\\n  <td>Issuance of Shares</td>\\n  <td>0</td>\\n  <td>No equity capital raised from investors.</td>\\n</tr>\\n<tr>\\n  <td>Loan Borrowings</td>\\n  <td>0</td>\\n  <td>No new debt raised for business expansion.</td>\\n</tr>\\n<tr>\\n  <td>Other Inflows</td>\\n  <td>0</td>\\n  <td>No miscellaneous sources of funds recorded.</td>\\n</tr>\\n</tbody>\\n</table>\\n\\n<h4>3. Application (Uses) of Funds</h4>\\n\\n<table>\\n<thead>\\n<tr>\\n  <th><strong>Use</strong></th>\\n  <th><strong>Amount ($)</strong></th>\\n  <th><strong>Remarks</strong></th>\\n</tr>\\n</thead>\\n<tbody>\\n<tr>\\n  <td>Capital Expenditures</td>\\n  <td>0</td>\\n  <td>No significant investment in new assets.</td>\\n</tr>\\n<tr>\\n  <td>Loan Repayment</td>\\n  <td>Varies</td>\\n  <td>Debt reduction, improves solvency.</td>\\n</tr>\\n<tr>\\n  <td>Dividend Payments</td>\\n  <td>0</td>\\n  <td>No returns given to shareholders.</td>\\n</tr>\\n<tr>\\n  <td>Increase in Working Capital</td>\\n  <td>Varies</td>\\n  <td>Indicates operational fund usage.</td>\\n</tr>\\n<tr>\\n  <td>Purchase of Investments</td>\\n  <td>0</td>\\n  <td>No investment or strategic acquisitions.</td>\\n</tr>\\n<tr>\\n  <td>Other Outflows</td>\\n  <td>0</td>\\n  <td>No miscellaneous fund applications.</td>\\n</tr>\\n</tbody>\\n</table>\\n\\n<h4>4. Changes in Working Capital</h4>\\n\\n<ul>\\n<li><strong>Increase in Current Assets</strong>: Inventory and Accounts Receivable have increased, indicating uses of funds.</li>\\n<li><strong>Increase in Current Liabilities</strong>: Payables and Short-term Debt have increased, indicating sources of funds.</li>\\n<li><strong>Net Change in Working Capital</strong>: The impact on liquidity has been negative, with working capital showing a deficit in most periods.</li>\\n</ul>\\n\\n<h4>5. Fund Flow from Different Activities</h4>\\n\\n<table>\\n<thead>\\n<tr>\\n  <th><strong>Activity Type</strong></th>\\n  <th><strong>Net Inflow/Outflow ($)</strong></th>\\n  <th><strong>Remarks</strong></th>\\n</tr>\\n</thead>\\n<tbody>\\n<tr>\\n  <td>Operating Activities</td>\\n  <td>Varies</td>\\n  <td>Profitability and core business cash flow.</td>\\n</tr>\\n<tr>\\n  <td>Investing Activities</td>\\n  <td>0</td>\\n  <td>No significant asset purchases/sales.</td>\\n</tr>\\n<tr>\\n  <td>Financing Activities</td>\\n  <td>0</td>\\n  <td>No debt and equity transactions.</td>\\n</tr>\\n</tbody>\\n</table>\\n\\n<h4>6. Liquidity &amp; Financial Stability Assessment</h4>\\n\\n<ul>\\n<li><strong>Cash Flow Sufficiency</strong>: The company has faced challenges in maintaining a positive net cash flow, indicating potential difficulties in meeting short-term and long-term obligations.</li>\\n<li><strong>Debt-Equity Ratio Impact</strong>: The fund movement has not significantly impacted financial leverage as there were no new borrowings or equity issuances.</li>\\n<li><strong>Overall Business Strategy Alignment</strong>: The fund flows have primarily supported operational activities, with limited investment in new assets or strategic acquisitions.</li>\\n</ul>\\n\\n<h4>7. Key Insights &amp; Recommendations</h4>\\n\\n<ul>\\n<li><strong>Positive Trends</strong>: Strong operating cash flow and free cash flow indicate good cash generation from core business activities.</li>\\n<li><strong>Risk Factors</strong>: Declining liquidity, negative net cash flow in several periods, and a deficit in working capital are concerning.</li>\\n<li><strong>Strategic Actions</strong>:\\n<ul>\\n<li>Improve cash management to ensure positive net cash flow.</li>\\n<li>Focus on reducing receivables and inventory to improve working capital.</li>\\n<li>Consider strategic investments to support long-term growth.</li>\\n<li>Explore opportunities for raising equity or debt to strengthen the financial position.</li>\\n</ul></li>\\n</ul>\\n\",\n        \"type\": \"individual\"\n    },\n    {\n        \"report_name\": \"Profit Loss Statement\",\n        \"content\": \"<h3>Profit &amp; Loss Analysis Report</h3>\\n\\n<h4>Key Metrics Analysis</h4>\\n\\n<ol>\\n<li><p><strong>Revenue/Sales:</strong></p>\\n\\n<ul>\\n<li><strong>Total Revenue:</strong> The total revenue has shown a consistent upward trend from 2022 to 2029. Starting at 689.3 in 2022, it has increased to 1710.82 by 2029.</li>\\n<li><strong>Growth Trends:</strong> The revenue has more than doubled over the period, indicating strong growth. This growth can be attributed to the increase in gross sales locally, as there are no export sales.</li>\\n<li><strong>Seasonal Variations:</strong> There are no significant seasonal variations observed in the data provided.</li>\\n</ul></li>\\n<li><p><strong>Cost of Goods Sold (COGS):</strong></p>\\n\\n<ul>\\n<li><strong>Direct Production Costs:</strong> The COGS has also increased over the years, from 496.16 in 2022 to 1023.02 in 2029. This indicates that while revenue is increasing, the cost of production is also rising.</li>\\n<li><strong>Efficiency in Managing Production Costs:</strong> The company needs to monitor its production costs closely to ensure that the profit margins are not adversely affected by the rising COGS.</li>\\n</ul></li>\\n<li><p><strong>Gross Profit Margin:</strong></p>\\n\\n<ul>\\n<li><strong>Management of Production Costs Relative to Sales:</strong> The gross profit margin has improved from 28.02% in 2022 to 40.20% in 2029. This indicates that the company is managing its production costs more efficiently relative to its sales over the years.</li>\\n</ul></li>\\n<li><p><strong>Operating Expenses:</strong></p>\\n\\n<ul>\\n<li><strong>Review of Operating Expenses:</strong> Operating expenses, including SG&amp;A, have increased from 11.3 in 2022 to 25.53 in 2029. While this is a significant increase, it is relatively small compared to the increase in revenue.</li>\\n<li><strong>Balance in Spending:</strong> The company appears to be maintaining a balance in its spending, ensuring that operating expenses do not outpace revenue growth.</li>\\n</ul></li>\\n<li><p><strong>Operating Income (EBIT):</strong></p>\\n\\n<ul>\\n<li><strong>Trend Analysis:</strong> EBIT has shown a strong upward trend, increasing from 181.84 in 2022 to 662.27 in 2029. This indicates improved operational efficiency.</li>\\n<li><strong>Operational Efficiency:</strong> The consistent increase in EBIT suggests that the company is becoming more efficient in its operations, excluding interest and taxes.</li>\\n</ul></li>\\n<li><p><strong>Operating Profit Margin:</strong></p>\\n\\n<ul>\\n<li>The operating profit margin has improved from 26.38% in 2022 to 38.71% in 2029. This indicates that the company is generating more profit from its operations relative to its revenue.</li>\\n</ul></li>\\n<li><p><strong>Net Income:</strong></p>\\n\\n<ul>\\n<li><strong>Total Profitability:</strong> Net income has increased significantly from 90.39 in 2022 to 512.39 in 2029. This reflects the overall financial health and profitability of the company after all expenses.</li>\\n<li><strong>Financial Health:</strong> The consistent increase in net income indicates a strong and healthy financial position.</li>\\n</ul></li>\\n<li><p><strong>Net Profit Margin:</strong></p>\\n\\n<ul>\\n<li>The net profit margin has improved from 13.11% in 2022 to 29.95% in 2029. This indicates that the company is retaining a larger portion of its revenue as profit.</li>\\n</ul></li>\\n<li><p><strong>Earnings Per Share (EPS):</strong></p>\\n\\n<ul>\\n<li><strong>Profit Per Outstanding Share:</strong> EPS has increased from 11.30 in 2022 to 64.05 in 2029. This indicates that the company is generating more profit per share over time.</li>\\n<li><strong>EPS Trends:</strong> The consistent increase in EPS reflects the company's growing profitability and is a positive sign for shareholders.</li>\\n</ul></li>\\n<li><p><strong>EBITDA:</strong></p>\\n\\n<ul>\\n<li><strong>Operational Performance and Cash Flow Generation:</strong> EBITDA has increased from 269.02 in 2022 to 728.32 in 2029. This indicates strong operational performance and cash flow generation.</li>\\n</ul></li>\\n<li><p><strong>Depreciation and Amortization:</strong></p>\\n\\n<ul>\\n<li><strong>Impact on Net Income:</strong> Depreciation and amortization expenses have decreased from 87.18 in 2022 to 66.05 in 2029. This reduction positively impacts net income, especially for a capital-intensive company.</li>\\n</ul></li>\\n<li><p><strong>Interest Expense:</strong></p>\\n\\n<ul>\\n<li><strong>Cost of Debt:</strong> Interest expenses have decreased significantly from 85.63 in 2022 to 16.73 in 2029. This indicates that the company is reducing its debt levels and the associated costs.</li>\\n<li><strong>Effect on Profitability:</strong> Lower interest expenses positively impact profitability, indicating better financial management and reduced leverage.</li>\\n</ul></li>\\n<li><p><strong>Tax Expense:</strong></p>\\n\\n<ul>\\n<li><strong>Tax Liability:</strong> Tax expenses have increased from 5.82 in 2022 to 133.15 in 2029. This increase is in line with the rising profitability of the company.</li>\\n<li><strong>Impact on Net Income:</strong> While tax expenses have increased, the overall net income has also increased, indicating that the company is managing its tax liabilities effectively.</li>\\n</ul></li>\\n<li><p><strong>EBIT to EBITDA Conversion:</strong></p>\\n\\n<ul>\\n<li><strong>Relationship Between EBIT and EBITDA:</strong> The conversion from EBIT to EBITDA shows a consistent increase, indicating that non-cash expenses (depreciation, amortization) are being managed effectively and are not significantly impacting profitability.</li>\\n</ul></li>\\n</ol>\\n\\n<h3>Conclusion</h3>\\n\\n<p>The company has shown strong financial performance over the years, with consistent growth in revenue, improved profit margins, and effective management of operating expenses. The reduction in interest expenses and effective tax management further enhance the company's profitability. The positive trends in key metrics such as EBIT, EBITDA, and EPS indicate a healthy and growing financial position, making the company an attractive prospect for investors.</p>\\n\",\n        \"type\": \"individual\"\n    }\n]"
+				}
+			]
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"packages": {},
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"packages": {},
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"key": "base_url",
+			"value": "http://localhost",
+			"type": "string"
+		},
+		{
+			"key": "port",
+			"value": "8000",
+			"type": "string"
+		}
+	]
+}

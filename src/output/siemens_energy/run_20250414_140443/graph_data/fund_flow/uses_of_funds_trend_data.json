@@ -1,0 +1,24 @@
+{
+    "chart_type": "line",
+    "c_name": "Uses of Funds Trend",
+    "financial_years": [
+        "31.03.2023",
+        "2024-03-31",
+        "2025-03-31",
+        "2026-03-31",
+        "2027-03-31",
+        "31.03.2028",
+        "31.03.2029"
+    ],
+    "data_series": {
+        "Increase in Fixed Assets": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+        ]
+    }
+}

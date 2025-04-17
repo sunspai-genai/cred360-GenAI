@@ -1,0 +1,60 @@
+{
+    "chart_type": "line",
+    "c_name": "Source of Funds Trend",
+    "financial_years": [
+        "31.03.2023",
+        "2024-03-31",
+        "2025-03-31",
+        "2026-03-31",
+        "2027-03-31",
+        "31.03.2028",
+        "31.03.2029"
+    ],
+    "data_series": {
+        "Net Funds Generated": [
+            248.17,
+            254.05,
+            272.4,
+            291.16,
+            314.57,
+            337.14,
+            358.03
+        ],
+        "Increase in Capital": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+        ],
+        "Increase in TL/Deb/DPG": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+        ],
+        "Increase in ST Bank borrowings": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+        ],
+        "Total Funds Available": [
+            248.81,
+            254.47,
+            272.58,
+            291.37,
+            314.77,
+            337.14,
+            358.03
+        ]
+    }
+}
