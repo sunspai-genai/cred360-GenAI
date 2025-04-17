@@ -105,3 +105,5 @@ langchain-community~=0.3.20
 aiosqlite~=0.21.0
 langchain_mcp_adapters~=0.0.6
 python-multipart~=0.0.20
+requests
+streamlit
