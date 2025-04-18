@@ -112,7 +112,7 @@ ENV/
 env.bak/
 venv.bak/
 credenv
-#.env
+.env
 
 # Spyder project settings
 .spyderproject
